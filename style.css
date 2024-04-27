@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    outline: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center; 
+    padding: 50px;
+}
+h1{
+    align-self: flex-start;
+    padding: 7px;
+}
+h1::before{
+    content: "";
+    background-color:#007BFF;
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    bottom: 0px;
+    border-radius: 5;
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    -ms-border-radius: 5;
+    -o-border-radius: 5;
+}
+
+.cart-container{
+    margin: 20px;
+    padding: 20px 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.product-container{
+    padding: 10px;
+    margin: 7px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FBFBFB;
+    border: 1px solid #32323232;
+
+}
+
+.product-container img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+.product-details{
+    padding: 10px;
+    width: 100%;
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.all-details{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.price-container{
+    padding: 10px;
+    width: 100%;
+    display: flex ;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.after-sale{
+    color: green;
+}
+.before-sale{
+    padding-left: 5px;
+    color: red;
+    text-decoration: line-through;
+}
+
+.btns-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.delete{
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    object-fit: cover;
+}
+.delete *{
+    font-size: 17px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.buttons button, .buttons div{
+    padding-top: 3px;
+    padding-right: 2px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #32323232;
+
+}
