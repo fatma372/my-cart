@@ -45,6 +45,7 @@ h1::before{
 .product-container{
     padding: 10px;
     margin: 7px;
+    min-width: 170px;
     display: flex;
     flex-direction: row;
     background-color: #FBFBFB;
@@ -122,4 +123,31 @@ h1::before{
     height: 30px;
     border: 2px solid #32323232;
 
+}
+
+@media screen and (max-width:530px) {
+    .all-details{
+        flex-direction: column;
+    }
+
+    .product-container{
+        flex-direction: column;
+    }
+    .product-container img{
+        align-self:center;
+    }
+
+    .btns-container{
+        flex-direction: row-reverse;
+        
+    }
+}
+
+@media screen and (max-width:320px) {
+    .btns-container{
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    
 }
